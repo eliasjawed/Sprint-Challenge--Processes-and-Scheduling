@@ -1,5 +1,6 @@
 int *alloc_1d(int cols)
 {
+	//Allocate size of int for each column 
 	int *allocate = malloc(cols * sizeof(int));
 	return allocate;
 }
