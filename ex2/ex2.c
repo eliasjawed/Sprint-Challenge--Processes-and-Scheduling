@@ -1,12 +1,13 @@
 int **alloc_2d(int rows, int cols)
 {
+	
+	//Allocate size for each row
 	int **row = malloc(rows*sizeof(int*));
 
+	//Allocate size for each column 
 	for(int i = 0; i < cols; i++) {
 		row[i] = malloc(cols * sizeof(int)); 
 	}
-	// !!! IMPLEMENT ME
-	// (solution is about 5 lines of code)
 }
 
 void alloc_2d_example(void)
